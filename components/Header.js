@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import NavLink from '/components/NavLink';
 import styled from 'styled-components';
 
 export default function Header() {
   return (
     <AppHeader>
       <Nav>
-        <Link href="/"><a>Home</a></Link>
-        <Link href="/product"><a>Product</a></Link>
-        <Link href="/team"><a>Team</a></Link>
-        <Link href="/account"><a>Account</a></Link>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/product">Product</NavLink>
+        <NavLink href="/team">Team</NavLink>
+        <NavLink href="/account">Account</NavLink>
       </Nav>
     </AppHeader>
   );
